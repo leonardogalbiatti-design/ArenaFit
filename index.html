@@ -1,0 +1,474 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ArenaFit: materiais esportivos para futebol, basquete, corrida, academia e muito mais.">
+  <meta name="theme-color" content="#0f172a">
+  <title>ArenaFit — Materiais esportivos</title>
+  <link rel="icon" href="img/icone-esporte.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="topo">
+
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho Estruturado em Duas Camadas -->
+  <header class="cabecalho">
+    <div class="container cabecalho-superior">
+      <a class="logo" href="#topo">
+        <img src="img/logo-esporte.png" alt="" width="62" height="32">
+        <span>ArenaFit</span>
+      </a>
+      <a class="botao botao-contorno" href="#">Entrar</a>
+    </div>
+
+    <nav class="menu-barra" aria-label="Menu principal">
+      <div class="container">
+        <ul>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#destaque">Destaque</a></li>
+          <li><a href="#categorias">Categorias</a></li>
+          <li><a href="#como-funciona">Como comprar</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Hero em Colunas (Texto + Imagem Enquadrada) -->
+    <section class="hero">
+      <div class="container hero-grade">
+        <div class="hero-texto">
+          <span class="hero-tag">Equipamentos e acessórios esportivos</span>
+          <h1>Tudo para o seu esporte favorito</h1>
+          <p>Encontre bolas, tênis, roupas e acessórios para treinar, competir e superar seus limites.</p>
+        </div>
+
+        <div class="hero-imagem">
+          <img src="img/hero-esportes.jpeg" alt="Materiais e equipamentos esportivos">
+        </div>
+      </div>
+
+      <!-- Barra de Busca Integrada na Base do Hero -->
+      <div class="container">
+        <form class="busca" action="#produtos" method="get" role="search">
+          <label class="campo">
+            <span>O que você procura?</span>
+            <input type="text" name="busca" placeholder="Bola, tênis, camiseta...">
+          </label>
+
+          <label class="campo">
+            <span>Categoria</span>
+            <select name="categoria">
+              <option>Futebol</option>
+              <option>Basquete</option>
+              <option>Corrida</option>
+              <option>Academia</option>
+              <option>Vôlei</option>
+              <option>Acessórios</option>
+            </select>
+          </label>
+
+          <label class="campo">
+            <span>Marca</span>
+            <input type="text" name="marca" placeholder="Nike, Adidas...">
+          </label>
+
+          <button class="botao" type="submit">Buscar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="beneficios">
+      <div class="container">
+        <ul class="lista-beneficios">
+          <li>
+            <span class="beneficio-icone">
+              <img src="img/ico-escudo.png" alt="" width="26" height="26">
+            </span>
+            <div>
+              <strong>Compra simples e segura</strong>
+              <p>Escolha seus produtos com praticidade.</p>
+            </div>
+          </li>
+
+          <li>
+            <span class="beneficio-icone">
+              <img src="img/ico-celular.png" alt="" width="26" height="26">
+            </span>
+            <div>
+              <strong>Variedade de produtos</strong>
+              <p>Equipamentos para diferentes modalidades.</p>
+            </div>
+          </li>
+
+          <li>
+            <span class="beneficio-icone">
+              <img src="img/ico-troca.png" alt="" width="26" height="26">
+            </span>
+            <div>
+              <strong>Qualidade e conforto</strong>
+              <p>Produtos selecionados para acompanhar seus treinos.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Produtos em Destaque (Estrutura Horizontal em 2 Colunas) -->
+    <section id="produtos" class="secao">
+      <div class="container">
+        <div class="produtos-topo">
+          <div class="titulo-secao">
+            <h2>Produtos em destaque</h2>
+            <p>Confira alguns dos produtos mais procurados.</p>
+          </div>
+
+          <ul class="filtros">
+            <li><a class="ativo" href="#produtos">Todos</a></li>
+            <li><a href="#produtos">Futebol</a></li>
+            <li><a href="#produtos">Basquete</a></li>
+            <li><a href="#produtos">Corrida</a></li>
+            <li><a href="#produtos">Academia</a></li>
+          </ul>
+        </div>
+
+        <div class="grade-produtos">
+
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/produto-bola.jpeg" alt="Bola de futebol sobre gramado" width="1200" height="896" loading="lazy">
+              <span class="selo">Mais vendido</span>
+            </div>
+
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-produto">Futebol</p>
+                <h3>Bola de Futebol</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-local.png" alt="" width="18" height="18"> Bola oficial · Tamanho 5</li>
+                  <li><img src="img/ico-relogio.png" alt="" width="18" height="18"> Produto em estoque</li>
+                </ul>
+              </div>
+
+              <div class="card-rodape">
+                <p class="preco"><span>por</span> R$ 89,90</p>
+                <a class="botao" href="#" aria-label="Comprar produto: Bola de Futebol">Comprar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/produto-tenis.jpeg" alt="Tênis esportivo" width="1200" height="896" loading="lazy">
+              <span class="selo">Disponível</span>
+            </div>
+
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-produto">Calçados</p>
+                <h3>Tênis Esportivo</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-local.png" alt="" width="18" height="18"> Calçado leve · Uso esportivo</li>
+                  <li><img src="img/ico-relogio.png" alt="" width="18" height="18"> Produto em estoque</li>
+                </ul>
+              </div>
+
+              <div class="card-rodape">
+                <p class="preco"><span>por</span> R$ 199,90</p>
+                <a class="botao" href="#" aria-label="Comprar produto: Tênis Esportivo">Comprar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card esgotado">
+            <div class="card-imagem">
+              <img src="img/produto-luva.jpeg" alt="Luva de goleiro" width="1200" height="896" loading="lazy">
+              <span class="selo selo-esgotado">Indisponível</span>
+            </div>
+
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-produto">Futebol</p>
+                <h3>Luva de Goleiro</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-local.png" alt="" width="18" height="18"> Conforto e aderência · Adulto</li>
+                  <li><img src="img/ico-relogio.png" alt="" width="18" height="18"> Produto indisponível</li>
+                </ul>
+              </div>
+
+              <div class="card-rodape">
+                <p class="preco preco-esgotado"><span>Produto</span> Indisponível</p>
+                <a class="botao botao-secundario" href="#" aria-label="Avise-me quando a Luva de Goleiro estiver disponível">Avise-me</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/produto-camiseta.jpeg" alt="Camiseta esportiva" width="1200" height="896" loading="lazy">
+              <span class="selo">Disponível</span>
+            </div>
+
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-produto">Vestuário</p>
+                <h3>Camiseta Esportiva</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-local.png" alt="" width="18" height="18"> Tecido leve · Vários tamanhos</li>
+                  <li><img src="img/ico-relogio.png" alt="" width="18" height="18"> Produto em estoque</li>
+                </ul>
+              </div>
+
+              <div class="card-rodape">
+                <p class="preco"><span>por</span> R$ 79,90</p>
+                <a class="botao" href="#" aria-label="Comprar produto: Camiseta Esportiva">Comprar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/produto-volei.jpeg" alt="Bola de vôlei" width="1200" height="896" loading="lazy">
+              <span class="selo">Mais vendido</span>
+            </div>
+
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-produto">Vôlei</p>
+                <h3>Bola de Vôlei</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-local.png" alt="" width="18" height="18"> Material resistente · Oficial</li>
+                  <li><img src="img/ico-relogio.png" alt="" width="18" height="18"> Produto em estoque</li>
+                </ul>
+              </div>
+
+              <div class="card-rodape">
+                <p class="preco"><span>por</span> R$ 119,90</p>
+                <a class="botao" href="#" aria-label="Comprar produto: Bola de Vôlei">Comprar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/produto-mochila.jpeg" alt="Mochila esportiva" width="1200" height="896" loading="lazy">
+              <span class="selo">Disponível</span>
+            </div>
+
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-produto">Acessórios</p>
+                <h3>Mochila Esportiva</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-local.png" alt="" width="18" height="18"> Compartimentos espaçosos · Dia a dia</li>
+                  <li><img src="img/ico-relogio.png" alt="" width="18" height="18"> Produto em estoque</li>
+                </ul>
+              </div>
+
+              <div class="card-rodape">
+                <p class="preco"><span>por</span> R$ 149,90</p>
+                <a class="botao" href="#" aria-label="Comprar produto: Mochila Esportiva">Comprar</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Destaque com Lados Invertidos (Texto à Esquerda, Foto à Direita) -->
+    <section id="destaque" class="destaque secao-branca">
+      <div class="container">
+        <div class="destaque-box">
+          <div class="destaque-info">
+            <span class="hero-tag">Em destaque</span>
+            <h2>Bola de Vôlei</h2>
+            <p>A bola de vôlei é ideal para partidas e treinos, com material resistente e ótimo desempenho.</p>
+
+            <ul class="meta meta-claro">
+              <li><img src="img/ico-calendario-claro.png" alt="" width="18" height="18"> Produto em destaque</li>
+              <li><img src="img/ico-local-claro.png" alt="" width="18" height="18"> Material resistente · Oficial</li>
+            </ul>
+
+            <div class="destaque-acoes">
+              <p class="preco"><span>por</span> R$ 119,90</p>
+              <a class="botao" href="#" aria-label="Comprar produto: Bola de Vôlei">Comprar produto</a>
+            </div>
+          </div>
+
+          <div class="destaque-imagem"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorias em Miniaturas Circulares -->
+    <section id="categorias" class="secao">
+      <div class="container">
+        <div class="titulo-secao titulo-centro">
+          <h2>Explore por categoria</h2>
+          <p>Encontre os materiais ideais para sua modalidade.</p>
+        </div>
+
+        <ul class="grade-categorias">
+          <li>
+            <a class="categoria" href="#produtos">
+              <img src="img/produto-bola.jpeg" alt="Bola de futebol" width="1200" height="896" loading="lazy">
+              <span>Futebol</span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#produtos">
+              <img src="img/produto-tenis.jpeg" alt="Tênis esportivo" width="1200" height="896" loading="lazy">
+              <span>Basquete</span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#produtos">
+              <img src="img/produto-luva.jpeg" alt="Luva esportiva" width="1200" height="896" loading="lazy">
+              <span>Corrida</span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#produtos">
+              <img src="img/produto-camiseta.jpeg" alt="Camiseta esportiva" width="1200" height="896" loading="lazy">
+              <span>Academia</span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#produtos">
+              <img src="img/produto-volei.jpeg" alt="Bola de vôlei" width="1200" height="896" loading="lazy">
+              <span>Vôlei</span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#produtos">
+              <img src="img/produto-mochila.jpeg" alt="Mochila esportiva" width="1200" height="896" loading="lazy">
+              <span>Acessórios</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Como Comprar + Newsletter Lado a Lado -->
+    <section id="como-funciona" class="secao secao-branca">
+      <div class="container">
+        <div class="titulo-secao">
+          <h2>Como comprar</h2>
+          <p>Veja como é fácil escolher seus produtos.</p>
+        </div>
+
+        <ol class="passos">
+          <li>
+            <span class="passo-numero">1</span>
+            <div>
+              <h3>Escolha o produto</h3>
+              <p>Navegue pelas categorias e encontre o material que precisa.</p>
+            </div>
+          </li>
+          <li>
+            <span class="passo-numero">2</span>
+            <div>
+              <h3>Confira os detalhes</h3>
+              <p>Confira as informações, o preço e a disponibilidade do produto.</p>
+            </div>
+          </li>
+          <li>
+            <span class="passo-numero">3</span>
+            <div>
+              <h3>Finalize sua compra</h3>
+              <p>Entre em contato para combinar sua compra e entrega.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <div>
+          <h2>Fique por dentro das novidades</h2>
+          <p>Receba novidades sobre produtos, ofertas e materiais esportivos.</p>
+        </div>
+
+        <form class="form-newsletter" action="#" method="post">
+          <input type="email" name="email" placeholder="Seu melhor e-mail" aria-label="Seu e-mail" required>
+          <button class="botao botao-secundario" type="submit">Quero receber</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="contato" class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+
+        <div>
+          <p class="rodape-marca">
+            <img src="img/logo-esporte.png" alt="" width="62" height="32">
+            <span>ArenaFit</span>
+          </p>
+
+          <p>Materiais esportivos para futebol, basquete, corrida, academia e muito mais.</p>
+
+          <ul class="redes">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Produtos</h3>
+          <ul>
+            <li><a href="#produtos">Futebol</a></li>
+            <li><a href="#produtos">Basquete</a></li>
+            <li><a href="#produtos">Corrida</a></li>
+            <li><a href="#produtos">Academia</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Ajuda</h3>
+          <ul>
+            <li><a href="#como-funciona">Como comprar</a></li>
+            <li><a href="#">Perguntas frequentes</a></li>
+            <li><a href="#">Política de troca</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contato</h3>
+          <address>
+            <p><a href="mailto:contato@arenafit.exemplo">contato@arenafit.exemplo</a></p>
+            <p>(00) 0000-0000</p>
+            <p>Segunda a sexta, das 9h às 18h</p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="rodape-base">
+        <p>ArenaFit é uma loja fictícia, criada para fins didáticos. Produtos e preços são ilustrativos.</p>
+
+        <ul class="links-legais">
+          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#topo">Voltar ao topo</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
