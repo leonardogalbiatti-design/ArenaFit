@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportMax - Loja de Materiais Esportivos</title>
+    
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,134 +32,213 @@
         </div>
     </header>
 
-    <!-- Banner Principal -->
-    <section id="inicio" class="banner">
-        <div class="banner-texto">
-            <h2>Supere Seus Limites Todos os Dias</h2>
-            <p>Os melhores equipamentos para futebol, corrida, musculação e muito mais.</p>
-            <a href="#produtos" class="botao">Ver Produtos</a>
-        </div>
-    </section>
+    <!-- Conteúdo Principal -->
+    <main>
 
-    <!-- Seção de Categorias -->
-    <section id="categorias" class="secao">
-        <div class="container">
-            <h2 class="titulo-secao">Categorias Esportivas</h2>
-            <div class="grid-categorias">
-                <div class="card-categoria">
-                    <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=500&q=80" alt="Futebol">
-                    <h3>Futebol</h3>
-                    <p>Bolas, chuteiras, meiões e uniformes completos.</p>
-                </div>
-                <div class="card-categoria">
-                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=500&q=80" alt="Musculação">
-                    <h3>Musculação</h3>
-                    <p>Halteres, anilhas, colchonetes e faixas elásticas.</p>
-                </div>
-                <div class="card-categoria">
-                    <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=500&q=80" alt="Corrida">
-                    <h3>Corrida</h3>
-                    <p>Tênis de alta performance e roupas leves.</p>
-                </div>
-                <div class="card-categoria">
-                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=500&q=80" alt="Basquete">
-                    <h3>Basquete</h3>
-                    <p>Bolas oficiais, tabelas e acessórios de quadra.</p>
+        <!-- Banner Principal -->
+        <section id="inicio" class="banner">
+            <div class="banner-texto animar-entrada">
+                <h2>Supere Seus Limites Todos os Dias</h2>
+                <p>Os melhores equipamentos para futebol, corrida, musculação e muito mais.</p>
+                <a href="#produtos" class="botao">Ver Produtos</a>
+            </div>
+        </section>
+
+        <!-- Seção de Categorias -->
+        <section id="categorias" class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">Categorias Esportivas</h2>
+                <div class="grid-categorias">
+                    <div class="card-categoria">
+                        <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=500&q=80" alt="Futebol">
+                        <h3>Futebol</h3>
+                        <p>Bolas, chuteiras, meiões e uniformes completos.</p>
+                    </div>
+                    <div class="card-categoria">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=500&q=80" alt="Musculação">
+                        <h3>Musculação</h3>
+                        <p>Halteres, anilhas, colchonetes e faixas elásticas.</p>
+                    </div>
+                    <div class="card-categoria">
+                        <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=500&q=80" alt="Corrida">
+                        <h3>Corrida</h3>
+                        <p>Tênis de alta performance e roupas leves.</p>
+                    </div>
+                    <div class="card-categoria">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=500&q=80" alt="Basquete">
+                        <h3>Basquete</h3>
+                        <p>Bolas oficiais, tabelas e acessórios de quadra.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Seção de Produtos em Destaque -->
-    <section id="produtos" class="secao fundo-cinza">
-        <div class="container">
-            <h2 class="titulo-secao">Produtos em Destaque</h2>
-            <div class="grid-produtos">
+        <!-- Seção de Produtos em Destaque -->
+        <section id="produtos" class="secao fundo-cinza">
+            <div class="container">
+                <h2 class="titulo-secao">Produtos em Destaque</h2>
+                <div class="grid-produtos">
+                    
+                    <!-- Produto 1 -->
+                    <div class="card-produto">
+                        <img src="https://images.unsplash.com/photo-1614632537423-1e6c2e7e0aab?auto=format&fit=crop&w=500&q=80" alt="Bola de Futebol">
+                        <h3>Bola de Futebol Profissional</h3>
+                        <p class="descricao">Costurada à mão, alta durabilidade para campo.</p>
+                        <p class="preco">R$ 149,90</p>
+                        <a href="#contato" class="botao-comprar">Comprar Agora</a>
+                    </div>
+
+                    <!-- Produto 2 -->
+                    <div class="card-produto">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Tênis de Corrida">
+                        <h3>Tênis Running Pro</h3>
+                        <p class="descricao">Amortecimento leve ideal para longas distâncias.</p>
+                        <p class="preco">R$ 299,90</p>
+                        <a href="#contato" class="botao-comprar">Comprar Agora</a>
+                    </div>
+
+                    <!-- Produto 3 -->
+                    <div class="card-produto">
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=500&q=80" alt="Par de Halteres">
+                        <h3>Kit Halteres Emborrachados</h3>
+                        <p class="descricao">Par de halteres de 5kg com pegada anatômica.</p>
+                        <p class="preco">R$ 119,90</p>
+                        <a href="#contato" class="botao-comprar">Comprar Agora</a>
+                    </div>
+
+                    <!-- Produto 4 -->
+                    <div class="card-produto">
+                        <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=500&q=80" alt="Bola de Basquete">
+                        <h3>Bola de Basquete Street</h3>
+                        <p class="descricao">Borracha reforçada para quadras externas e internas.</p>
+                        <p class="preco">R$ 129,90</p>
+                        <a href="#contato" class="botao-comprar">Comprar Agora</a>
+                    </div>
+
+                    <!-- Produto 5 -->
+                    <div class="card-produto">
+                        <img src="https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?auto=format&fit=crop&w=500&q=80" alt="Luvas de Boxe">
+                        <h3>Luvas de Treino 12oz</h3>
+                        <p class="descricao">Proteção extra para treinos de boxe e muay thai.</p>
+                        <p class="preco">R$ 179,90</p>
+                        <a href="#contato" class="botao-comprar">Comprar Agora</a>
+                    </div>
+
+                    <!-- Produto 6 -->
+                    <div class="card-produto">
+                        <img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=500&q=80" alt="Tapete de Yoga">
+                        <h3>Tapete de Yoga e Treino</h3>
+                        <p class="descricao">Material antiderrapante de fácil limpeza.</p>
+                        <p class="preco">R$ 79,90</p>
+                        <a href="#contato" class="botao-comprar">Comprar Agora</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Promoções -->
+        <section id="promocoes" class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">Ofertas da Semana</h2>
+                <div class="banner-promo">
+                    <div class="promo-info">
+                        <h3>Kit Treino em Casa Completo</h3>
+                        <p>Leve 1 colchonete, 1 corda de pular e 1 par de halteres com 25% de desconto!</p>
+                        <p class="preco-antigo">De: R$ 280,00</p>
+                        <p class="preco-novo">Por: R$ 210,00</p>
+                        <a href="#contato" class="botao">Aproveitar Oferta</a>
+                    </div>
+                    <div class="promo-imagem">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Kit Treino em Casa">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Nós -->
+        <section id="sobre" class="secao fundo-cinza">
+            <div class="container">
+                <h2 class="titulo-secao">Sobre a SportMax</h2>
+                <div class="sobre-conteudo">
+                    <div class="sobre-texto">
+                        <p>A <strong>SportMax</strong> nasceu com o objetivo de incentivar o esporte e a saúde para todos. Trabalhamos com marcas reconhecidas e materiais testados para garantir segurança e desempenho em cada treino.</p>
+                        <p>Seja você um atleta iniciante ou profissional, temos os equipamentos certos para ajudar você a alcançar suas metas.</p>
+                        <ul class="lista-vantagens">
+                            <li>✔ Entrega rápida para todo o Brasil</li>
+                            <li>✔ Garantia de 90 dias em todos os produtos</li>
+                            <li>✔ Atendimento especializado para tirar suas dúvidas</li>
+                            <li>✔ Parcelamento em até 6x sem juros</li>
+                        </ul>
+                    </div>
+                    <div class="sobre-imagem">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Academia e Esportes">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato / Pedido -->
+        <section id="contato" class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">Fale Conosco ou Faça seu Pedido</h2>
+                <p class="subtitulo-centro">Preencha o formulário abaixo e nossa equipe entrará em contato rapidamente.</p>
                 
-                <!-- Produto 1 -->
-                <div class="card-produto">
-                    <img src="https://images.unsplash.com/photo-1614632537423-1e6c2e7e0aab?auto=format&fit=crop&w=500&q=80" alt="Bola de Futebol">
-                    <h3>Bola de Futebol Profissional</h3>
-                    <p class="descricao">Costurada à mão, alta durabilidade para campo.</p>
-                    <p class="preco">R$ 149,90</p>
-                    <a href="#contato" class="botao-comprar">Comprar Agora</a>
-                </div>
+                <form class="formulario-contato">
+                    <div class="campo">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
 
-                <!-- Produto 2 -->
-                <div class="card-produto">
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Tênis de Corrida">
-                    <h3>Tênis Running Pro</h3>
-                    <p class="descricao">Amortecimento leve ideal para longas distâncias.</p>
-                    <p class="preco">R$ 299,90</p>
-                    <a href="#contato" class="botao-comprar">Comprar Agora</a>
-                </div>
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
 
-                <!-- Produto 3 -->
-                <div class="card-produto">
-                    <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=500&q=80" alt="Par de Halteres">
-                    <h3>Kit Halteres Emborrachados</h3>
-                    <p class="descricao">Par de halteres de 5kg com pegada anatômica.</p>
-                    <p class="preco">R$ 119,90</p>
-                    <a href="#contato" class="botao-comprar">Comprar Agora</a>
-                </div>
+                    <div class="campo">
+                        <label for="telefone">WhatsApp / Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+                    </div>
 
-                <!-- Produto 4 -->
-                <div class="card-produto">
-                    <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=500&q=80" alt="Bola de Basquete">
-                    <h3>Bola de Basquete Street</h3>
-                    <p class="descricao">Borracha reforçada para quadras externas e internas.</p>
-                    <p class="preco">R$ 129,90</p>
-                    <a href="#contato" class="botao-comprar">Comprar Agora</a>
-                </div>
+                    <div class="campo">
+                        <label for="produto">Produto de Interesse:</label>
+                        <select id="produto" name="produto">
+                            <option value="bola-futebol">Bola de Futebol Profissional</option>
+                            <option value="tenis">Tênis Running Pro</option>
+                            <option value="halteres">Kit Halteres Emborrachados</option>
+                            <option value="bola-basquete">Bola de Basquete Street</option>
+                            <option value="luvas">Luvas de Treino 12oz</option>
+                            <option value="tapete">Tapete de Yoga e Treino</option>
+                            <option value="kit-promo">Kit Treino em Casa (Promoção)</option>
+                        </select>
+                    </div>
 
-                <!-- Produto 5 -->
-                <div class="card-produto">
-                    <img src="https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?auto=format&fit=crop&w=500&q=80" alt="Luvas de Boxe">
-                    <h3>Luvas de Treino 12oz</h3>
-                    <p class="descricao">Proteção extra para treinos de boxe e muay thai.</p>
-                    <p class="preco">R$ 179,90</p>
-                    <a href="#contato" class="botao-comprar">Comprar Agora</a>
-                </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem ou Dúvida:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva aqui o tamanho, cor ou dúvida..."></textarea>
+                    </div>
 
-                <!-- Produto 6 -->
-                <div class="card-produto">
-                    <img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=500&q=80" alt="Tapete de Yoga">
-                    <h3>Tapete de Yoga e Treino</h3>
-                    <p class="descricao">Material antiderrapante de fácil limpeza.</p>
-                    <p class="preco">R$ 79,90</p>
-                    <a href="#contato" class="botao-comprar">Comprar Agora</a>
-                </div>
+                    <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
 
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="rodape-info">
+                <h3>SportMax Materiais Esportivos</h3>
+                <p>Rua dos Esportes, 123 - Centro - São Paulo/SP</p>
+                <p>Horário de atendimento: Segunda a Sábado, das 08h às 18h</p>
+                <p>E-mail: contato@sportmax.com.br | Tel: (11) 3333-4444</p>
+            </div>
+            <div class="rodape-direitos">
+                <p>&copy; 2026 SportMax - Todos os direitos reservados.</p>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <!-- Seção de Promoções -->
-    <section id="promocoes" class="secao">
-        <div class="container">
-            <h2 class="titulo-secao">Ofertas da Semana</h2>
-            <div class="banner-promo">
-                <div class="promo-info">
-                    <h3>Kit Treino em Casa Completo</h3>
-                    <p>Leve 1 colchonete, 1 corda de pular e 1 par de halteres com 25% de desconto!</p>
-                    <p class="preco-antigo">De: R$ 280,00</p>
-                    <p class="preco-novo">Por: R$ 210,00</p>
-                    <a href="#contato" class="botao">Aproveitar Oferta</a>
-                </div>
-                <div class="promo-imagem">
-                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Kit Treino em Casa">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Sobre Nós -->
-    <section id="sobre" class="secao fundo-cinza">
-        <div class="container">
-            <h2 class="titulo-secao">Sobre a SportMax</h2>
-            <div class="sobre-conteudo">
-                <div class="sobre-texto">
-                    <p>A <strong>SportMax</strong> nasceu com o objetivo de incentivar o esporte e a saúde para todos. Trabalhamos com marcas reconhecidas e materiais testados para garantir segurança e desempenho em cada treino.</p>
-                    <p>Seja você um atleta iniciante ou profissional, temos os equipamentos certos para ajudar você a alcançar suas metas.</p>
-                    <ul class="lista-vantagens">
-                        <li>✔ Entrega rápida para todo o Brasil</li>
+</body>
+</html>

@@ -1,13 +1,31 @@
+/* Variáveis CSS em :root */
+:root {
+    --cor-principal: #ff6600;
+    --cor-principal-hover: #e05500;
+    --cor-escura: #111111;
+    --cor-texto: #333333;
+    --cor-texto-suave: #666666;
+    --cor-fundo-claro: #f4f4f4;
+    --cor-branca: #ffffff;
+    --cor-borda: #dddddd;
+    --fonte-padrao: 'Poppins', sans-serif;
+}
+
 /* Configurações Gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao);
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
-    color: #333;
+    color: var(--cor-texto);
     line-height: 1.6;
 }
 
@@ -17,10 +35,26 @@ body {
     margin: 0 auto;
 }
 
+/* Animações */
+@keyframes aparecerDeBaixo {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animar-entrada {
+    animation: aparecerDeBaixo 0.9s ease-out;
+}
+
 /* Cabeçalho */
 header {
-    background-color: #111;
-    color: #fff;
+    background-color: var(--cor-escura);
+    color: var(--cor-branca);
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -34,11 +68,11 @@ header .container {
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .logo span {
-    color: #ff6600;
+    color: var(--cor-principal);
 }
 
 nav ul {
@@ -48,14 +82,15 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--cor-branca);
     text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff6600;
+    color: var(--cor-principal);
 }
 
 /* Banner Principal */
@@ -69,32 +104,35 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: var(--cor-branca);
     padding: 20px;
 }
 
 .banner-texto h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 15px;
 }
 
 .banner-texto p {
-    font-size: 18px;
+    font-size: 1.15rem;
     margin-bottom: 25px;
 }
 
 .botao {
-    background-color: #ff6600;
-    color: #fff;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
     padding: 12px 28px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1rem;
     border-radius: 5px;
     display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .botao:hover {
-    background-color: #e05500;
+    background-color: var(--cor-principal-hover);
+    transform: scale(1.05);
 }
 
 /* Seções Gerais */
@@ -103,23 +141,24 @@ nav ul li a:hover {
 }
 
 .fundo-cinza {
-    background-color: #f4f4f4;
+    background-color: var(--cor-fundo-claro);
 }
 
 .titulo-secao {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.9rem;
     margin-bottom: 40px;
-    color: #111;
+    color: var(--cor-escura);
 }
 
 .subtitulo-centro {
     text-align: center;
+    font-size: 1rem;
     margin-bottom: 30px;
-    color: #666;
+    color: var(--cor-texto-suave);
 }
 
-/* Categorias */
+/* Categorias (Flexbox) */
 .grid-categorias {
     display: flex;
     flex-wrap: wrap;
@@ -128,14 +167,20 @@ nav ul li a:hover {
 }
 
 .card-categoria {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: var(--cor-branca);
+    border: 1px solid var(--cor-borda);
     border-radius: 8px;
     width: 23%;
     min-width: 220px;
     text-align: center;
     padding-bottom: 15px;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-categoria:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
 .card-categoria img {
@@ -146,16 +191,17 @@ nav ul li a:hover {
 
 .card-categoria h3 {
     margin: 15px 0 8px;
-    color: #ff6600;
+    font-size: 1.2rem;
+    color: var(--cor-principal);
 }
 
 .card-categoria p {
     padding: 0 10px;
-    font-size: 14px;
-    color: #555;
+    font-size: 0.9rem;
+    color: var(--cor-texto-suave);
 }
 
-/* Produtos */
+/* Produtos (Flexbox) */
 .grid-produtos {
     display: flex;
     flex-wrap: wrap;
@@ -164,13 +210,19 @@ nav ul li a:hover {
 }
 
 .card-produto {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: var(--cor-branca);
+    border: 1px solid var(--cor-borda);
     border-radius: 8px;
     width: 31%;
     min-width: 260px;
     padding: 15px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-produto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
 .card-produto img {
@@ -182,34 +234,36 @@ nav ul li a:hover {
 
 .card-produto h3 {
     margin: 15px 0 8px;
-    font-size: 18px;
+    font-size: 1.15rem;
 }
 
 .card-produto .descricao {
-    font-size: 14px;
-    color: #666;
+    font-size: 0.9rem;
+    color: var(--cor-texto-suave);
     margin-bottom: 12px;
 }
 
 .card-produto .preco {
-    font-size: 20px;
-    font-weight: bold;
-    color: #111;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--cor-escura);
     margin-bottom: 15px;
 }
 
 .botao-comprar {
     display: block;
-    background-color: #111;
-    color: #fff;
+    background-color: var(--cor-escura);
+    color: var(--cor-branca);
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
 }
 
 .botao-comprar:hover {
-    background-color: #ff6600;
+    background-color: var(--cor-principal);
 }
 
 /* Promoções */
@@ -217,8 +271,8 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #111;
-    color: #fff;
+    background-color: var(--cor-escura);
+    color: var(--cor-branca);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -230,20 +284,25 @@ nav ul li a:hover {
 }
 
 .promo-info h3 {
-    font-size: 28px;
-    color: #ff6600;
+    font-size: 1.75rem;
+    color: var(--cor-principal);
     margin-bottom: 15px;
+}
+
+.promo-info p {
+    font-size: 1rem;
 }
 
 .promo-info .preco-antigo {
     text-decoration: line-through;
-    color: #aaa;
+    color: #aaaaaa;
+    font-size: 0.95rem;
     margin-top: 15px;
 }
 
 .promo-info .preco-novo {
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 1.65rem;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -270,6 +329,7 @@ nav ul li a:hover {
 .sobre-texto {
     flex: 1;
     min-width: 280px;
+    font-size: 1rem;
 }
 
 .sobre-texto p {
@@ -283,8 +343,9 @@ nav ul li a:hover {
 
 .lista-vantagens li {
     margin-bottom: 8px;
-    font-weight: bold;
-    color: #222;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--cor-escura);
 }
 
 .sobre-imagem {
@@ -303,7 +364,7 @@ nav ul li a:hover {
     margin: 0 auto;
     background: #f9f9f9;
     padding: 30px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--cor-borda);
     border-radius: 8px;
 }
 
@@ -314,7 +375,8 @@ nav ul li a:hover {
 .campo label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 0.95rem;
 }
 
 .campo input,
@@ -322,50 +384,52 @@ nav ul li a:hover {
 .campo textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
-    font-size: 15px;
+    font-size: 0.95rem;
 }
 
 .botao-enviar {
     width: 100%;
-    background-color: #ff6600;
-    color: #fff;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
     border: none;
     padding: 12px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .botao-enviar:hover {
-    background-color: #e05500;
+    background-color: var(--cor-principal-hover);
 }
 
 /* Rodapé */
 footer {
-    background-color: #111;
-    color: #fff;
+    background-color: var(--cor-escura);
+    color: var(--cor-branca);
     text-align: center;
     padding: 30px 0;
 }
 
 .rodape-info h3 {
-    color: #ff6600;
+    color: var(--cor-principal);
+    font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
 .rodape-info p {
-    font-size: 14px;
-    color: #ccc;
+    font-size: 0.9rem;
+    color: #cccccc;
     margin-bottom: 5px;
 }
 
 .rodape-direitos {
     margin-top: 20px;
     padding-top: 15px;
-    border-top: 1px solid #333;
-    font-size: 13px;
-    color: #888;
+    border-top: 1px solid #333333;
+    font-size: 0.85rem;
+    color: #888888;
 }
